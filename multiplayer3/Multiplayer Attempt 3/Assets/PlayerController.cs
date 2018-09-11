@@ -21,10 +21,23 @@ public class PlayerController : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Fire();
+            CmdFire();
         }
     }
 
+    // This [Command] code is called on the Client …
+    // … but it is run on the Server!
+    [Command]
+    void CmdFire()
+    {
+        RpcFire();
+    }
+
+    [ClientRpc]
+    void RpcFire()
+    {
+        Fire();
+    }
 
     void Fire()
     {
