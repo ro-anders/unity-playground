@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4232999538125328}
   - component: {fileID: 114385224712560054}
   - component: {fileID: 212156680466343536}
+  - component: {fileID: 114482489921028412}
+  - component: {fileID: 114556245493521106}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -73,6 +75,39 @@ MonoBehaviour:
     i15: 54
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114482489921028412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996629812651914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd33cc01ee0d4608829510aacc662b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &114556245493521106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996629812651914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 0
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!212 &212156680466343536
 SpriteRenderer:
   m_ObjectHideFlags: 1
