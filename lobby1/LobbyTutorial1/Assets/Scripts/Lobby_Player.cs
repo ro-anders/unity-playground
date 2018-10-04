@@ -11,6 +11,10 @@ public class Lobby_Player : NetworkLobbyPlayer {
     public Text MyText;
     public Text ButtonText;
 
+    public void onClickJoin() {
+        SendReadyToBeginMessage();
+    }
+
     public override void OnClientEnterLobby()
     {
         base.OnClientEnterLobby();
@@ -19,15 +23,28 @@ public class Lobby_Player : NetworkLobbyPlayer {
         Setup();
     }
 
-    private void Setup() {
+    public override void OnStartLocalPlayer()
+    {
+        base.OnStartLocalPlayer();
         if (isLocalPlayer) {
-            MyText.text = "MYPlayer";
-            Joinbutton.enabled = true;
-            ButtonText.text = "JOIN";
+            Setup();
         } else {
-            MyText.text = "Not me";
-            Joinbutton.enabled = false;
-            ButtonText.text = "...";
+            SetupOtherPlayer();
         }
     }
+
+    private void Setup()
+    {
+        MyText.text = "MYPlayer";
+        Joinbutton.enabled = true;
+        ButtonText.text = "JOIN";
+    }
+ 
+    private void SetupOtherPlayer()
+    {
+        MyText.text = "Not me";
+        Joinbutton.enabled = false;
+        ButtonText.text = "...";
+    }
+
 }
