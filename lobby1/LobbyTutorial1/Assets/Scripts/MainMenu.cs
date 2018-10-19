@@ -16,4 +16,8 @@ public class MainMenu : MonoBehaviour {
                                             "", "", "", 0, 0, lobbymanager.OnMatchCreate);
 
     }
+
+    public void OnClickJoinButton() {
+        lobbymanager.StartMatchMaker();
+    }
 }
