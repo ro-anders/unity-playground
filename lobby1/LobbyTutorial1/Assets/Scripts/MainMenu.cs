@@ -8,7 +8,8 @@ public class MainMenu : MonoBehaviour {
 
     public InputField MatchNameInput;
     public LobbyManager lobbymanager;
-
+    public GameObject joinRoomObj;
+    JoinRoom joinRoom;
 
     public void OnClickHostButton() {
         lobbymanager.StartMatchMaker();
@@ -19,5 +20,8 @@ public class MainMenu : MonoBehaviour {
 
     public void OnClickJoinButton() {
         lobbymanager.StartMatchMaker();
+        joinRoomObj.SetActive(true);
+        joinRoom = joinRoomObj.GetComponent<JoinRoom>();
+        joinRoom.RefreshList();
     }
 }
