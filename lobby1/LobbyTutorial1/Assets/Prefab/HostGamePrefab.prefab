@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222494697714883188}
   - component: {fileID: 114987925455145506}
   - component: {fileID: 114387179730182410}
+  - component: {fileID: 114275061437118246}
   m_Layer: 5
   m_Name: HostGamePrefab
   m_TagString: Untagged
@@ -46,6 +47,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114275061437118246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166130097266558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2819fbd6cb51d4b20aee7bad3d84f7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostName: {fileID: 114609093845922638}
 --- !u!114 &114387179730182410
 MonoBehaviour:
   m_ObjectHideFlags: 1

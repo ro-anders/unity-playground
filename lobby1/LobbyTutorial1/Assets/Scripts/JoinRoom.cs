@@ -33,6 +33,8 @@ public class JoinRoom : MonoBehaviour {
             foreach(MatchInfoSnapshot match in matchList) {
                 GameObject ListGO = Instantiate(PrefabForHost);
                 ListGO.transform.SetParent(ParentForHost.transform);
+                HostSetup hostSetup = ListGO.GetComponent<HostSetup>();
+                hostSetup.Setup(match);
             }
         }
     }
