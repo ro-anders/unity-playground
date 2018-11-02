@@ -17,6 +17,7 @@ public class Lobby_Player : NetworkLobbyPlayer {
 
     public override void OnClientEnterLobby()
     {
+        Debug.Log("Client entered lobby");
         base.OnClientEnterLobby();
         ParentPref = GameObject.FindGameObjectWithTag("ParentPref");
         gameObject.transform.SetParent(ParentPref.transform);
