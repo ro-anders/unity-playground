@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LobbyController : MonoBehaviour {
 
-    private const string LOBBY_MATCH_NAME = "h2h-default";
+    private const string LOBBY_MATCH_NAME = "h2h-default-1";
 
     private NetworkManager lobbyManager;
 

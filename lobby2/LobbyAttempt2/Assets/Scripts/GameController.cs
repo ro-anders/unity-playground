@@ -8,9 +8,14 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
 
 
-    private const string GAME_MATCH_NAME = "h2h-1";
+    private const string GAME_MATCH_NAME = "h2h-2";
 
     private NetworkManager lobbyManager;
+
+    public void Start()
+    {
+        ConnectToDefault();
+    }
 
     public void ConnectToDefault()
     {

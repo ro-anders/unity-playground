@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 433616517}
   - component: {fileID: 433616516}
   - component: {fileID: 433616518}
+  - component: {fileID: 433616519}
   m_Layer: 0
   m_Name: LobbyManager
   m_TagString: Untagged
@@ -476,7 +477,7 @@ MonoBehaviour:
     m_MaxTimerTimeout: 12000
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -513,6 +514,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48627ebe34f96467aa5b59964d789b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &433616519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433616515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1180575928, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HostMigration: 1
+  m_ShowGUI: 1
+  m_OffsetX: 10
+  m_OffsetY: 300
 --- !u!1 &617085082
 GameObject:
   m_ObjectHideFlags: 0
